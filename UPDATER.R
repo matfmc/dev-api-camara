@@ -984,7 +984,7 @@ GenerateVotacoes <- function(){
   
   listavotacoes2020 <- data.frame()
   for(k in 1:1000){
-    cat(k, sep='\n')
+    #cat(k, sep='\n')
     lista <- GETVotacoes(dataInicio = (as.Date(parametros$dataFim) ), pagina = k)
     if( length(lista[["dados"]]) != 0 ){
       pagina <- lista[["dados"]]
